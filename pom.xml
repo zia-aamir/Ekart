@@ -125,13 +125,14 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
             </plugin>
            <plugin>
-         <groupId>org.owasp</groupId>
-         <artifactId>dependency-check-maven</artifactId>
-          <version>8.4.0</version>
-         <configuration>
-              <nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
-        </configuration>
-   </plugin>
+    <groupId>org.owasp</groupId>
+    <artifactId>dependency-check-maven</artifactId>
+    <version>8.4.0</version>
+
+    <configuration>
+        <nvdApiKey>${env.NVD_API_KEY}</nvdApiKey>
+    </configuration>
+</plugin>
 
    <plugin>
     <groupId>org.jacoco</groupId>
